@@ -2,6 +2,10 @@ dist: xenial
 virt: lxd
 os: linux
 
+vm:
+  size:
+    - x-large
+
 env:
   - CI=false TERM=xterm
 
