@@ -1,9 +1,16 @@
-os: linux
 dist: xenial
-
-arch: amd64
 virt: lxd
+os: linux
 
-language: ruby
+env:
+  - CI=false
+  - TERM=xterm
 
+before_install:
+  - git checkout $TRAVIS_BRANCH
+
+install: 
+  - pwd 
+  - ls
+  
 script: true
