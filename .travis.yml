@@ -17,4 +17,4 @@ install:
   - ls
   
 script:
-  - systeminfo
+  - grep MemTotal /proc/meminfo
