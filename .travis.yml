@@ -16,4 +16,5 @@ install:
   - pwd 
   - ls
   
-script: true
+script:
+  - systeminfo
