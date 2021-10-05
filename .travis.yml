@@ -1,13 +1,15 @@
 jobs:
   include:
     # No VM size defined - uses the default 2vCPU and RAM
-    - os: linux
+    - stage: No VM Size Defined
+      os: linux
       dist: focal
       language: ruby
       script:
         - free -m
     # VM size large defined
-    - os: linux
+    - stage: Large VM Size Defined
+      os: linux
       dist: focal
       language: ruby
       vm:
@@ -16,7 +18,8 @@ jobs:
       script:
         - free -m
     # VM size x-large defined
-    - os: linux
+    - stage: X-Large VM Size Defined
+      os: linux
       dist: focal
       language: ruby
       vm:
